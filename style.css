@@ -1,26 +1,23 @@
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 body{
     margin: 0;
-    background-color: #252525;
+    background-color: #efefef;
     box-sizing: border-box;
 }
-
 .container{
     margin: 5rem auto;
-    background-color: rgb(214, 214, 214);
+    background-color: #ffffff;
     max-width: 400px;
     width: 75%;
     height: 500px;
     padding: 20px;
-    border-radius: 0.5em;
-    color: #ffff;
+    border-radius: 0.8em;
     text-align: center;
     position: relative;
+    box-shadow: 10px 10px 37px 0px rgba(113, 113, 113, 0.75);
 }
-
 .color-box{
     margin-top: 1em;
     margin-bottom: 1em;
@@ -29,12 +26,11 @@ body{
     background-color: #777777;
     border-radius: 0.3em;
 }
-
 #btn{
     cursor: pointer;
     padding: 0.5em 1em;
+    border: none;
     background-color: #ffffff;
-    border-radius: 0.2rem;
     min-width: 80px;
     min-height: 35px;
     transform: translate(-50%, -50%);
@@ -42,7 +38,6 @@ body{
     top: 91%;
     left: 50%;
 }
-
 #btn::before{
     content: "";
     height: 100%;
@@ -50,25 +45,25 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: repeating-linear-gradient(to right, #fb3e3e 0%, #fbac3e 20%, #fbfb3e 40%, #3efb3e 60%, #3e3efb 80%, #ac3efb 100%);
-    background-size: 6em;
-
+    background: linear-gradient(to right, #fd1c1c 0%, #ff9e17 15%, #ffff36 30%, #40ff40 45%, #5353ff 60%, #bb5dff 75%, #ff24ba 90%, #fd1c1c 100%);
+    background-size: 8em;
+    border-radius: 2.3px;
 }
 #btn::after{
     content: "Generate";
     position: absolute;
     background-color: #252525;
     border-radius: 0.2em;
-    height: 90%;
+    height: 87%;
     width: 94%;
     top: 7%;
     left:3%;
-    color: #ffff;
+    color: #ffffff;
     display: grid;
     place-items: center;
 }
 
 #btn:hover::before{
-    background-position: -5em 0;
-    transition: 5s linear;
+    background-position: -1050em 0;
+    transition: 500s linear;
 }
